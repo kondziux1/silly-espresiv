@@ -24,6 +24,13 @@ oleddraw::~oleddraw(){
     
 }
 
+int oleddraw::uibackground(){
+	display.clearDisplay();
+	display.drawRect(0,0,128,64,SSD1306_WHITE);
+	display.display();
+	return 0;
+}
+
 
 
 int oleddraw::showimagefromdb(unsigned int curimg){
